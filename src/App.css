@@ -1,38 +1,219 @@
-.App {
-  text-align: center;
+.bg {
+  min-height: 100vh;
+  color: #fff;
+  /* min-height: calc(100vh - 4rem); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-white {
+  --bs-bg-opacity: 2;
+  border-radius: none;
+  background-color: #011627 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-link {
+  color: #eee;
+}
+
+.nav-link:hover {
+  color: lime;
+}
+
+.nav-link:active {
+  color: lime;
+}
+.shared-class {
+  color: red;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  background-color: mediumslateblue;
+  color: #eee;
+}
+
+@media (width < 481px) {
+  .app-logo,
+  .i__nav {
+    margin-left: 0.9rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 02s linear;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes app-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+header {
+  margin-top: 40px;
+  margin-bottom: 4rem;
+}
+
+.header__container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  font-family: "Lora", serif;
+  color: #444;
+}
+
+.header__title {
+  top: 10%;
+  position: absolute;
+  font-size: 20px;
+}
+
+.header__subtitle {
+  top: 11.4%;
+  position: absolute;
+  font-size: 100px;
+  font-style: italic;
+}
+
+.header__image {
+  width: 100%;
+  height: 600px;
+  margin-top: 80px;
+  object-fit: cover;
+  background-position: center;
+}
+
+/* .bottom__fade__bottom {
+  height: 5.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    #383d5ccc,
+    black
+  );
+} */
+
+.aside__icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.aside__container {
+  /* display: block; */
+}
+.__aside__title,
+.aside__title {
+  display: block;
+  text-align: center;
+}
+.aside__title {
+  margin: 3.2em auto;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  border-top: 1px solid #a7a4a4;
+  border-bottom: 1px solid #a7a4a4;
+  font-family: "Varela Round", "sans-serif";
+  color: #eeeeee73;
+  font-weight: 600;
+  font-size: 12px;
+}
+.aside__image {
+  width: 20rem;
+  height: 450px;
+  margin-top: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 2em auto;
+}
+.categorise {
+  max-width: 40em;
+  margin: auto;
+}
+.categorise li {
+  width: 33%;
+  line-height: 2rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.social__link {
+  color: rgb(187, 127, 255);
+  cursor: pointer;
+}
+.social__link:hover {
+  animation: social-spin infinite 02s linear;
+}
+@keyframes social-spin {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+.card-container {
+  /* line-height: 20px; */
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px; */
+  /* justify-content: space-between; */
+}
+.card-content {
+  /* width: 580px; */
+  text-align: center;
+}
+.content__image {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+}
+.card__title {
+  color: #ffff0018 !important;
+  margin: 0.6em auto;
+}
+.card__subtitle {
+  /* margin: 2.2em auto; */
+  font-size: 18px;
+  font-weight: 700;
+}
+.card__time {
+  font-style: italic;
+  color: #eeeeee71;
+  /* margin: 1.1em auto; */
+  display: block;
+}
+.card__disc {
+  max-width: 480px;
+  margin: auto;
+  margin-bottom: 1.4em;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.post-container{
+  /* width: 500pc; */
+}
+.post__image{
+  width: 100%;
+  max-height: 32rem;
+  border-radius: 10px;
+}
+.post__icon{
+  display: inline;
+  cursor: pointer;
+  /* float: right; */
+  margin: auto 0.6rem;
+}.image__upload{
+  cursor: pointer;
+}
+.user__picture{
+  width: 05em;
+  height: 05em;
 }
